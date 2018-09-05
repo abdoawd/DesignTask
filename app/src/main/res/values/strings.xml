@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DesignTask</string>
+    <string name="other_string_key">الاخرين</string>
+    <string name="my_disputes">فزعاتى</string>
+    <string name="canceled">تم الالغاء</string>
+    <string name="waiting">قيد الانتظار</string>
+    <string name="accepted">تم القبول</string>
+</resources>

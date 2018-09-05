@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:layoutDirection="ltr">
+
+    <ImageView
+        android:id="@+id/imv_item_list_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/type_car"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"
+        android:text="ابى اروح الهايبر وما عندى سيارة ابى حدا يوصلنى"
+        app:layout_constraintEnd_toStartOf="@+id/imv_item_list_help"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@mipmap/my_list_help_accepted_time"
+        android:drawablePadding="5dp"
+        android:text=" منذ ساعة"
+        app:layout_constraintEnd_toStartOf="@id/imv_item_list_help"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_text" />
+
+    <TextView
+        android:id="@+id/attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:drawableEnd="@mipmap/my_list_help_accepted_info_attendance"
+        android:drawablePadding="5dp"
+        android:text=" رجال"
+        app:layout_constraintEnd_toStartOf="@id/tv_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_text" />
+
+    <TextView
+        android:id="@+id/help_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:drawableEnd="@mipmap/my_list_help_accepted_info_help_type"
+        android:drawablePadding="5dp"
+        android:text=" فزعة سيارة"
+        app:layout_constraintEnd_toStartOf="@id/attendance"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_text" />
+
+    <TextView
+        android:id="@+id/tv_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:drawableEnd="@mipmap/my_list_help_accepted_accept"
+        android:drawablePadding="5dp"
+        android:text="2 فزعو"
+        app:layout_constraintEnd_toStartOf="@id/help_type"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_text" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_shape"
+        android:text="الغاء"
+        app:layout_constraintTop_toBottomOf="@id/help_type"
+        app:layout_constraintEnd_toStartOf="@id/imv_item_list_help"
+        android:layout_marginBottom="10dp" />
+
+
+</android.support.constraint.ConstraintLayout>
